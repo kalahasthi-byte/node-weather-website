@@ -14,7 +14,7 @@ const forecast = (latitude,longitude,callback)=>{
     
         } else {
             
-            callback(undefined, body.current.weather_descriptions[0] +'. It is currently ' + body.current.temperature+ ' out. But feels like ' + body.current.feelslike+'. (in fahrenheit) ')
+            callback(undefined, 'Welcome to the weather application. '+body.current.weather_descriptions[0] +'. It is currently ' + body.current.temperature+ ' out. But feels like ' + body.current.feelslike+'. (in fahrenheit) ')
          
         }
     })
